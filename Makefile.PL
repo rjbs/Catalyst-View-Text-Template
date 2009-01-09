@@ -7,6 +7,7 @@ use File::Find;
 all_from('lib/Catalyst/View/Text/Template.pm');
 
 requires('Catalyst::View');
+requires('parent');
 requires('Text::Template');
 
 WriteAll();
