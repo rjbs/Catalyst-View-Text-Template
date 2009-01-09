@@ -8,6 +8,7 @@ all_from('lib/Catalyst/View/Text/Template.pm');
 
 requires('Catalyst::View');
 requires('parent');
+requires('Scalar::Util');
 requires('Text::Template');
 
 WriteAll();
