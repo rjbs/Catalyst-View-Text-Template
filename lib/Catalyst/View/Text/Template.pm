@@ -3,6 +3,8 @@ use warnings;
 package Catalyst::View::Text::Template;
 use parent 'Catalyst::View';
 
+our $VERSION = '0.000';
+
 use Scalar::Util ();
 use Text::Template ();
 

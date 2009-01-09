@@ -11,4 +11,6 @@ requires('parent');
 requires('Scalar::Util');
 requires('Text::Template');
 
+auto_manifest;
+
 WriteAll();
