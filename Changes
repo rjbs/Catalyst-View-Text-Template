@@ -1,4 +1,7 @@
 Revision history for Catalyst-View-Text-Template
 
+0.001   2009-01-05
+        correct a broken dist
+
 0.000   2009-01-08
         initial release
