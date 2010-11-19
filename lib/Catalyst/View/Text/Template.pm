@@ -3,7 +3,7 @@ use warnings;
 package Catalyst::View::Text::Template;
 use parent 'Catalyst::View';
 
-our $VERSION = '0.001';
+our $VERSION = '0.002';
 
 use Scalar::Util ();
 use Text::Template ();
@@ -27,7 +27,7 @@ sub new {
     %{ $arguments },
   };
 
-  my $self = $class->NEXT::new(
+  my $self = $class->next::method(
     $c,
     { %$config }, 
   );

@@ -6,7 +6,7 @@ use File::Find;
 
 all_from('lib/Catalyst/View/Text/Template.pm');
 
-requires('Catalyst::View');
+requires('Catalyst::Runtime', '5.8000');
 requires('parent');
 requires('Scalar::Util');
 requires('Text::Template');
