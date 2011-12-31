@@ -49,13 +49,15 @@ __compclass__
 package [% class %];
 
 use strict;
-use base 'Catalyst::View::Text::Template';
+use warnings;
+
+use parent 'Catalyst::View::Text::Template';
 
 __PACKAGE__->config(TEMPLATE_EXTENSION => '.tmpl');
 
 =head1 NAME
 
-[% class %] - Catalyst Text::Template View
+[% class %] - Catalyst Text::Template View for [% app %]
 
 =head1 SYNOPSIS
 
@@ -63,7 +65,7 @@ See L<[% app %]>
 
 =head1 DESCRIPTION
 
-Catalyst Text::Template View.
+Catalyst Text::Template View for [% app %]
 
 =head1 AUTHOR
 
