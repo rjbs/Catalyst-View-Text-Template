@@ -1,5 +1,8 @@
 Revision history for Catalyst-View-Text-Template
 
+0.004   2011-12-30
+        eliminate a stupid warning on every render
+
 0.003   2011-01-10
         added a helper (contributed by Dean Hamstead)
 

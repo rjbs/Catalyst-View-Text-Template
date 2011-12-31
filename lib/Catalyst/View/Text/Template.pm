@@ -3,7 +3,7 @@ use warnings;
 package Catalyst::View::Text::Template;
 use parent 'Catalyst::View';
 
-our $VERSION = '0.003';
+our $VERSION = '0.004';
 
 use Scalar::Util ();
 use Text::Template ();
@@ -43,7 +43,6 @@ sub _find_file {
 sub process {
   my ($self, $c) = @_;
   my $template = $c->stash->{template} || $c->action;
-  $c->log->warn(sprintf ">> $template (action=%s)", $c->action);
 
   my $content_type = $c->res->content_type || $self->{default_content_type};
 
