@@ -1,16 +1,17 @@
 use strict;
-use warnings;
+use ExtUtils::MakeMaker;
 
-use inc::Module::Install;
-use File::Find;
+WriteMakefile(
+	NAME          => 'Catalyst-View-Text-Template',
+  ABSTRACT      => 'Text::Template views for Catalyst',
+	AUTHOR        => 'Ricardo SIGNES <rjbs@cpan.org>',
+	VERSION_FROM  => 'lib/Catalyst/View/Text/Template.pm',
+  (eval { ExtUtils::MakeMaker->VERSION(6.21) } ? (LICENSE => 'perl') : ()),
+	PREREQ_PM => {
+    'Catalyst::Runtime' => '5.8000',
+    'parent' => 0,
+    'Scalar::Util' => 0,
+    'Text::Template' => 0,
+	},
+);
 
-all_from('lib/Catalyst/View/Text/Template.pm');
-
-requires('Catalyst::Runtime', '5.8000');
-requires('parent');
-requires('Scalar::Util');
-requires('Text::Template');
-
-auto_manifest;
-
-WriteAll();
