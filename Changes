@@ -1,5 +1,11 @@
 Revision history for Catalyst-View-Text-Template
 
+0.005   2012-01-02
+        add a number of pass-through Text::Template parameters to config
+        (thanks, Dean Hamstead)
+
+        add a TEMPLATE_EXTENSION parameter (thanks, Dean Hamstead)
+
 0.004   2011-12-30
         eliminate a stupid warning on every render
 
