@@ -135,8 +135,8 @@ sub render {
   # load up various arguments for Text::Template rendering
   my %targs;
   for my $k ((qw( BROKEN BROKEN_ARG SAFE DELIMITERS PREPEND SAFE ))) {
-    $targs{$_} = $self->config->{$_}
-      if $self->config->{$_};
+    $targs{$k} = $self->config->{$k}
+      if $self->config->{$k};
   }
 
   my $result = Text::Template::fill_in_file(

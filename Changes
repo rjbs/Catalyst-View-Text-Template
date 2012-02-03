@@ -1,5 +1,8 @@
 Revision history for Catalyst-View-Text-Template
 
+0.00x   2012-02-03
+        fixed obvious stuff up by myself (Dean Hamstead)
+
 0.005   2012-01-02
         add a number of pass-through Text::Template parameters to config
         (thanks, Dean Hamstead)
