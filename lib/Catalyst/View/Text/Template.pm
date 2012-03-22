@@ -4,7 +4,7 @@ package Catalyst::View::Text::Template;
 
 use parent 'Catalyst::View';
 
-our $VERSION = '0.006';
+our $VERSION = '0.007';
 
 use Scalar::Util ();
 use Text::Template ();

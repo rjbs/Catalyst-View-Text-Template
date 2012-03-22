@@ -1,5 +1,8 @@
 Revision history for Catalyst-View-Text-Template
 
+0.007   2012-03-22
+        rebuild dist, but with files
+
 0.006   2012-03-20
         fix a bug in the use of configuration (Dean Hamstead)
 
