@@ -48,10 +48,10 @@ __DATA__
 __compclass__
 package [% class %];
 
-use strict;
-use warnings;
+use Moose;
+use namespace::autoclean;
 
-use parent 'Catalyst::View::Text::Template';
+extends 'Catalyst::View::Text::Template';
 
 __PACKAGE__->config(TEMPLATE_EXTENSION => '.tmpl');
 
