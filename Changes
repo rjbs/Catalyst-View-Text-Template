@@ -1,5 +1,8 @@
 Revision history for Catalyst-View-Text-Template
 
+0.008   2012-09-14
+        update the Helper to be moosy (Dean Hamstead)
+
 0.007   2012-03-22
         rebuild dist, but with files
 
