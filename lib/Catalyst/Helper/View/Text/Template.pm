@@ -1,9 +1,6 @@
 use strict;
 package Catalyst::Helper::View::Text::Template;
-
-=head1 NAME
-
-Catalyst::Helper::View::Text::Template - Helper for Text::Template Views
+# ABSTRACT: Helper for Text::Template Views
 
 =head1 SYNOPSIS
 
@@ -13,9 +10,7 @@ Catalyst::Helper::View::Text::Template - Helper for Text::Template Views
 
 Helper for Text::Template Views.
 
-=head2 METHODS
-
-=head3 mk_compclass
+=method mk_compclass
 
 =cut
 
@@ -29,15 +24,6 @@ sub mk_compclass {
 
 L<Catalyst::Manual>, L<Catalyst::Test>, L<Catalyst::Request>,
 L<Catalyst::Response>, L<Catalyst::Helper>, L<Catalyst::View::Text::Template>
-
-=head1 AUTHOR
-
-Dean Hamstead, C<dean@fragfest.com.au>
-
-=head1 LICENSE
-
-This library is free software. You can redistribute it and/or modify
-it under the same terms as perl itself.
 
 =cut
 

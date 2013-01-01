@@ -1,6 +1,7 @@
 use strict;
 use warnings;
 package Catalyst::View::Text::Template;
+# ABSTRACT: Text::Template views for Catalyst
 
 use parent 'Catalyst::View';
 
@@ -8,10 +9,6 @@ our $VERSION = '0.008';
 
 use Scalar::Util ();
 use Text::Template ();
-
-=head1 NAME
-
-Catalyst::View::Text::Template - Text::Template views for Catalyst
 
 =head1 WARNING
 
@@ -166,24 +163,6 @@ sub template_vars {
 =head1 SEE ALSO
 
 L<Text::Template>
-
-=head1 AUTHOR
-
-Ricardo SIGNES, C<< <rjbs at cpan.org> >>
-
-=head1 BUGS
-
-Please report any bugs or feature requests through the web interface at
-L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Catalyst-View-Text-Template>.
-I will be notified, and then you'll automatically be notified of progress on
-your bug as I make changes.
-
-=head1 COPYRIGHT & LICENSE
-
-Copyright 2009 Ricardo SIGNES.
-
-This program is free software; you can redistribute it and/or modify it under
-the same terms as Perl itself.
 
 =cut
 
