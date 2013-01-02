@@ -1,5 +1,10 @@
 Revision history for Catalyst-View-Text-Template
 
+{{$NEXT}}
+        build with Dist::Zilla
+
+        this build correctly omits the incorrectly included MYMETA.* files
+
 0.008   2012-09-14
         update the Helper to be moosy (Dean Hamstead)
 
