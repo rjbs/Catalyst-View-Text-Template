@@ -1,6 +1,8 @@
 Revision history for Catalyst-View-Text-Template
 
 {{$NEXT}}
+
+0.009     2013-01-01 19:51:12 America/New_York
         build with Dist::Zilla
 
         this build correctly omits the incorrectly included MYMETA.* files
