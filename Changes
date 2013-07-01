@@ -1,6 +1,7 @@
 Revision history for Catalyst-View-Text-Template
 
 {{$NEXT}}
+          update bugtracker
 
 0.009     2013-01-01 19:51:12 America/New_York
           build with Dist::Zilla
