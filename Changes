@@ -1,6 +1,8 @@
 Revision history for Catalyst-View-Text-Template
 
 {{$NEXT}}
+
+0.010     2013-07-01 19:29:38 America/New_York
           update bugtracker
 
 0.009     2013-01-01 19:51:12 America/New_York
