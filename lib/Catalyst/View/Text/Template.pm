@@ -5,6 +5,7 @@ package Catalyst::View::Text::Template;
 
 use parent 'Catalyst::View';
 
+use Encode 'encode';
 use Scalar::Util ();
 use Text::Template ();
 
@@ -134,14 +135,20 @@ sub render {
       if $self->config->{$k};
   }
 
-  my $result = Text::Template::fill_in_file(
-    $file,
+  open my $fh, '<:encoding(utf-8)', $file
+    or die "can't open template file $file: $!";
+
+  my $template = Text::Template->new(
+    TYPE   => 'FILEHANDLE',
+    SOURCE => $fh,
     %{ $self->{template_args} || {} },  # where does this come from?
     %targs,
-    HASH => $hash,
-  ) or die "Couldn't fill in template: $Text::Template::ERROR";
+  );
 
-  return $result;
+  my $result = $template->fill_in(HASH => $hash)
+    or die "Couldn't fill in template: $Text::Template::ERROR";
+
+  return encode('UTF-8', $result, Encode::FB_CROAK);
 }
 
 # when merging template_vars and the stash, the template_vars win
